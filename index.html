@@ -32,18 +32,24 @@
           <button onclick="play()" class="play-button">Play</button>
         </div>
       </div>
+      
       <div class="directional-pad">
 
-        <button id="btnUp">Up</button>
-        <button id="btnDown">Down</button>
-        <button id="btnLeft">Left</button>
-        <button id="btnRight">Right</button>
-        <div class="divide-red-600">
-        <button id="btnDrop">Drop</button>
-        <button id="btnPause">Pause</button>
-      </div>
+        <button class="compass-button north" id="btnUp">&#8593;</button>
+        <div class="flex justify-between">
+          <button class="compass-button west" id="btnLeft">&#8592;</button>
+        <button class="compass-button east" id="btnRight">&#8594;</button>
+        </div>
+        <button class="compass-button south" id="btnDown">&darr;</button>
+
+        
       </div>
 
+      <div class="pause-drop">
+                <button id="btnPause">Pause</button>
+              <button id="btnDrop">Drop</button>
+              
+            </div>
       <!-- move drop and pause buttons and have other buttons like 
       a dpad for controller. -->
 
